@@ -13,6 +13,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --theme-primary-dark: #D3D4D9;
+  --theme-primary-light: #1E1E24;
+  --theme-secondary: #EC5800;
+  --theme-accent: #4B88A2;
+
 }
 
 /* TODO Fix theme toggle - currently the themes aren't applying. 
@@ -20,9 +26,7 @@
     right now
 */
 :global(.dark-theme) {
-  --theme-primary: #D3D4D9;
-  --theme-secondary: #EC5800;
-  --theme-accent: #4B88A2;
+
   color: var(--theme-primary);
   background-image: radial-gradient(
     circle at 15% 50%,
@@ -32,15 +36,9 @@
 }
 
 :global(.light-theme) {
-  --theme-primary: #1E1E24;
   --theme-secondary: #4B88A2;
   --theme-accent: #EC5800;
-    color: var(--theme-primary);
-    background-image: radial-gradient(
-      circle at 15% 50%,
-      var(--theme-primary),
-      var(--theme-accent)
-    );
+
 }
 
 
@@ -53,6 +51,14 @@ html {
   padding: 0;
   margin: 0;
   min-height: 100dvh;
+}
+
+body {
+  background-image: radial-gradient(
+    circle at 100% 75%,
+    var(--theme-accent),
+    transparent
+  );
 }
 
 a {

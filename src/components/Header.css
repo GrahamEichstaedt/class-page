@@ -11,12 +11,12 @@
 }
 
 .header h1 {
-    color: var(--theme-primary);
+    /* color: var(--theme-primary-dark); */
     font-family: 'Montserrat';
     font-size: 5em;
     /* margin-block: .25em; */
 }
 
 .secondary {
-    /* color: ; */
+    color: var(--theme-secondary);
 }
