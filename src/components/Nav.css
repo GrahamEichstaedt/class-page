@@ -1,0 +1,39 @@
+.topnav {
+    box-shadow: 0px 3px 5px 5px rgba(255, 255, 255, .02);
+    display: flex;
+    flex-direction: row;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-inline: 1em;
+    width: 100%;
+}
+
+.navitem {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-inline: 1em;
+}
+
+.navitem:nth-child(1) {
+    margin-right: auto;
+}
+
+.login {
+    background-color: #EC5800;
+    text-align: center;
+    padding-inline: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, .05);
+}
+
+.admin {
+    background-color: var(--theme-secondary);
+}

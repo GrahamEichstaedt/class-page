@@ -1,0 +1,22 @@
+.header-wrapper {
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    min-height: 75dvh;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.header h1 {
+    color: var(--theme-primary);
+    font-family: 'Montserrat';
+    font-size: 5em;
+    /* margin-block: .25em; */
+}
+
+.secondary {
+    /* color: ; */
+}
