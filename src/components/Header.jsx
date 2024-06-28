@@ -14,8 +14,9 @@ export function Header({children}) {
     return (
         <div className="header-wrapper">
             <header className="header">
-                <h1>CompTIA <span className="light-theme secondary">A+</span></h1>
-                <p>Rockford's #1 Entry Level IT Certification</p>
+                {/* <h1>CompTIA <span className="light-theme secondary">A+</span></h1>
+                <p>Rockford's #1 Entry Level IT Certification</p> */}
+                {children}
             </header>
         </div>
     )

@@ -4,7 +4,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Header from './components/Header'
 import Nav from './components/Nav'
-import TextPane from './components/TextPane'
 import {
   Admin,
   Coursera,
@@ -12,7 +11,8 @@ import {
   Home,
   Info,
   Learn,
-  Practice
+  Practice,
+  Exams
 } from './pages';
 import './index.css';
 
@@ -73,6 +73,8 @@ function App() {
         <Route path="certmaster-learn" element={<Learn />} />
         <Route path="certmaster-practice" element={<Practice />} />
         <Route path="admin" element={<Admin />} />
+        <Route path="exams" element={<Exams />} />
+        <Route path="error" element={<Error />} />
       </Routes>
     </BrowserRouter>
   )

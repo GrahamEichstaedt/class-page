@@ -1,5 +1,5 @@
 .header-wrapper {
-
+    flex: 2;
 }
 
 .header {
@@ -8,6 +8,8 @@
     min-height: 75dvh;
     align-items: center;
     justify-content:flex-start;
+
+    animation: header 1200ms ease-in-out;
 }
 
 .header h1 {
@@ -15,8 +17,22 @@
     font-family: 'Montserrat';
     font-size: 5em;
     /* margin-block: .25em; */
+     
+
 }
+
+
 
 .secondary {
     color: var(--theme-secondary);
+}
+
+@keyframes header {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

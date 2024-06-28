@@ -5,5 +5,5 @@ export { default as Learn } from './Learn.jsx';
 export { default as Practice } from './Practice.jsx';
 export { default as Admin } from './Admin.jsx';
 export { default as Error } from './Error.jsx';
-
+export { default as Exams } from './Exams.jsx';
 
