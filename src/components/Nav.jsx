@@ -48,7 +48,7 @@ export function Nav({theme, toggleTheme}) {
                     </Link>    
                 </li>
                 <li className="navitem">
-                    <Link className="navlink" to="/certmaster-practice">CertMaster Practice</Link>
+                    <Link className="navlink" to="#/certmaster-practice">CertMaster Practice</Link>
                 </li>
                 <li className="navitem">
                     <Link className="navlink" to="#/exams">Exams</Link>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Header from './components/Header'
@@ -46,37 +46,24 @@ function App() {
   }
 
   return (
-//     <main className={`${theme}`}>
-//       <Nav theme={theme}toggleTheme={toggleTheme}/>
-//       <Header />
-//       <TextPane textArray={["Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe libero animi rerum dignissimos fuga, porro fugiat qui maiores aliquid mollitia expedita sunt praesentium, incidunt similique repellendus? Autem sapiente eum repellendus!",
-// "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione possimus cumque, magnam similique architecto dolorum natus ad unde cum nisi a alias veritatis facere vero eaque ducimus numquam, odit officia.",
-// "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nihil dolor optio consequuntur rem nostrum. Illum, explicabo a totam inventore distinctio eius itaque ipsam. Cumque, iste pariatur. A, esse tenetur." 
-// ]} />
-//       <TextPane textArray={["Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe libero animi rerum dignissimos fuga, porro fugiat qui maiores aliquid mollitia expedita sunt praesentium, incidunt similique repellendus? Autem sapiente eum repellendus!",
-// "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione possimus cumque, magnam similique architecto dolorum natus ad unde cum nisi a alias veritatis facere vero eaque ducimus numquam, odit officia.",
-// "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nihil dolor optio consequuntur rem nostrum. Illum, explicabo a totam inventore distinctio eius itaque ipsam. Cumque, iste pariatur. A, esse tenetur." 
-// ]} />
-//       <TextPane textArray={["Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe libero animi rerum dignissimos fuga, porro fugiat qui maiores aliquid mollitia expedita sunt praesentium, incidunt similique repellendus? Autem sapiente eum repellendus!",
-// "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione possimus cumque, magnam similique architecto dolorum natus ad unde cum nisi a alias veritatis facere vero eaque ducimus numquam, odit officia.",
-// "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nihil dolor optio consequuntur rem nostrum. Illum, explicabo a totam inventore distinctio eius itaque ipsam. Cumque, iste pariatur. A, esse tenetur." 
-// ]} />
-
-//     </ main>
-    <BrowserRouter>
+    // <HashRouter>
+    <div>
       <Nav />
       <Routes>
-        <Route path="/" element={<Nav />} />
+        <Route path="#/" element={<Nav />} />
         <Route index element={<Home />} />
-        <Route path='info' element={<Info />} />
-        <Route path="coursera" element={<Coursera />} />
-        <Route path="certmaster-learn" element={<Learn />} />
-        <Route path="certmaster-practice" element={<Practice />} />
-        <Route path="admin" element={<Admin />} />
-        <Route path="exams" element={<Exams />} />
-        <Route path="error" element={<Error />} />
+        <Route path='#/info' element={<Info />} />
+        <Route path="#/coursera" element={<Coursera />} />
+        <Route path="#/certmaster-learn" element={<Learn />} />
+        <Route path="#/certmaster-practice" element={<Practice />} />
+        <Route path="#/admin" element={<Admin />} />
+        <Route path="#/exams" element={<Exams />} />
+        <Route path="#/error" element={<Error />} />
       </Routes>
-    </BrowserRouter>
+    </div>
+      
+
+    // </HashRouter>
   )
 }
 
