@@ -9,7 +9,7 @@ export function Exams() {
                 <h1>Exams</h1>
             </Header>
             <Section>
-                <h2>Exams</h2>
+                <h2>Exam Scoring</h2>
                 <article>
                     <p>
                         Earning your CompTIA A+ Certification requires that you pass two exams - A+ Core 1 and A+ Core 2.

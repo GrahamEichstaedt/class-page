@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import anime from 'animejs';
 import '../index.css';
 import './Nav.css';
 import { FaBars } from "react-icons/fa";
@@ -29,7 +29,7 @@ export function Nav({theme, toggleTheme}) {
             <ul className='navlist'>
                 <li className="navitem" title="Home">
                     <Link className="navlink" to="/">
-                        <img src='../../comptia-logo.svg' alt="CompTIA Logo" />
+                        <img src='/src/assets/ywca-logo.png' alt="YWCA Logo" />
                     </Link>
                 </li>
                 <li className="navitem">

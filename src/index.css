@@ -115,7 +115,7 @@ h2 {
 
 @media (max-width: 600px) {
   .header h1 {
-    font-size: 2em !important;
+    font-size: 3em !important;
   }
 
   h2 {

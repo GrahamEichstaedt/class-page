@@ -31,3 +31,17 @@ img {
     -webkit-background-clip: text;
     background-clip: text;
 }
+
+.accent {
+    border: none;
+    width: 2.5ch;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+}
+
+h2 {
+    /* font-family: ; */
+}
