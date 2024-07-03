@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import anime from 'animejs';
+import ywcaLogo from "../assets/ywca-logo.png";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import anime from 'animejs';
 import '../index.css';
 import './Nav.css';
-import { FaBars } from "react-icons/fa";
+// import { FaBars } from "react-icons/fa";
 
 export function Nav({theme, toggleTheme}) {
 
@@ -23,35 +23,37 @@ export function Nav({theme, toggleTheme}) {
 
         return () => window.removeEventListener('scroll', handleScroll);
     }, [previousSrollPosition]);
+
+
     
     return (
         <nav className={`topnav ${isHidden ? 'hidden' : ''}`} >
             <ul className='navlist'>
                 <li className="navitem" title="Home">
-                    <Link className="navlink" to="#/">
-                        <img src='/src/assets/ywca-logo.png' alt="YWCA Logo" />
+                    <Link className="navlink" to="/">
+                        <img src={ywcaLogo} alt="YWCA Logo" />
                     </Link>
                 </li>
                 <li className="navitem">
-                    <Link className="navlink" to="#/info">                    
+                    <Link className="navlink" to="/info">                    
                         Course Info
                     </Link>    
                 </li>
                 <li className="navitem">
-                    <Link className="navlink" to="#/coursera">
+                    <Link className="navlink" to="/coursera">
                         Coursera
                     </Link>
                 </li>
                 <li className="navitem">
-                    <Link className="navlink" to="#/certmaster-learn">
+                    <Link className="navlink" to="/certmaster-learn">
                         CertMaster Learn
                     </Link>    
                 </li>
                 <li className="navitem">
-                    <Link className="navlink" to="#/certmaster-practice">CertMaster Practice</Link>
+                    <Link className="navlink" to="/certmaster-practice">CertMaster Practice</Link>
                 </li>
                 <li className="navitem">
-                    <Link className="navlink" to="#/exams">Exams</Link>
+                    <Link className="navlink" to="/exams">Exams</Link>
                 </li>
                 {/* <li className="navitem">
                     <Link className="navlink" to="/admin">Admin</Link>

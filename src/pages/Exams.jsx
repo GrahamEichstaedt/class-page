@@ -1,3 +1,5 @@
+import core1Objs from '../assets/objectives-core1.pdf';
+import core2Objs from '../assets/objectives-core2.pdf';
 import Header from "../components/Header";
 import Section from "../components/Section";
 
@@ -21,11 +23,11 @@ export function Exams() {
             </Section>
             <Section>
                 <h2>Core 1 Exam Objectives</h2>
-                <iframe src="/src/assets/objectives-core1.pdf" frameborder="0" width="100%"></iframe>
+                <iframe src={core1Objs} frameborder="0" width="100%"></iframe>
             </Section>
             <Section>
                 <h2>Core 2 Exam Objectives</h2>
-                <iframe src="/src/assets/objectives-core2.pdf" frameborder="0" width="100%"></iframe>
+                <iframe src={core2Objs} frameborder="0" width="100%"></iframe>
             </Section>
         </>
     )

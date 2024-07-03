@@ -1,16 +1,12 @@
 import Header from "../components/Header";
 import Section from "../components/Section";
+import comptiaLogo from '../assets/comptia-logo-no-bg.png';
+import googleLogo from '../assets/google-logo.png';
+import freeCodeCampLogo from '../assets/free-code-camp-logo.png';
 import anime from "animejs";
 import '../index.css';
 
 export function Info() {
-    
-
-    // anime({
-    //     targets: '.screen',
-    //     elasticity: 
-    // })
-    
 
     return (
         <>
@@ -36,11 +32,11 @@ export function Info() {
                     <h2>IT Track</h2>
                     <div className="it-courses">
                         <figure>
-                            <img src="/src/assets/google-logo.png" alt="Google & CompTIA Logos" />
+                            <img src={googleLogo} alt="Google & CompTIA Logos" />
                             <figcaption><a href="https://www.coursera.org/programs/yw-tech-lab-google-it-support-tcxl4">Google IT Support</a></figcaption>
                         </figure>
                         <figure>
-                            <img src="/src/assets/comptia-logo-no-bg.png" alt="CompTIA Logo" />
+                            <img src={comptiaLogo} alt="CompTIA Logo" />
                             <figcaption><a href="https://www.comptia.org/certifications/a">CompTIA A+</a></figcaption>
                         </figure>
                     </div>
@@ -48,7 +44,7 @@ export function Info() {
                 <div className="course-container">
                     <h2>Tech Track</h2>
                     <figure>
-                        <img src="/src/assets/free-code-camp-logo.png" alt="FreeCodeCamp Logo" />
+                        <img src={freeCodeCampLogo} alt="FreeCodeCamp Logo" />
                         <figcaption><a href="https://www.freecodecamp.org/">FreeCodeCamp.org</a></figcaption>
                     </figure>
                 </div>
