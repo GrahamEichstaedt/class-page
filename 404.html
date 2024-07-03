@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    // Single Page Apps for GitHub Pages
+    // MIT License
+    // https://github.com/rafgraph/spa-github-pages
+    (function(){
+      // Retrieve the user's original request
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      // Check if a redirect is required (i.e., the page is not index.html)
+      if (redirect && redirect != location.href) {
+        // Redirect to the index page
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+  

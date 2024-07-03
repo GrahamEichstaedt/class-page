@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Header from './components/Header'
 import Nav from './components/Nav'
 import {
   Admin,
@@ -46,25 +43,20 @@ function App() {
   }
 
   return (
-    // <HashRouter>
-    <div>
-      <Nav />
+    <div className={`App ${theme === "light" ? "light" : "dark"}`}>
+      <Nav /> 
       <Routes>
-        <Route path="#/" element={<Nav />} />
-        <Route index element={<Home />} />
-        <Route path='#/info' element={<Info />} />
-        <Route path="#/coursera" element={<Coursera />} />
-        <Route path="#/certmaster-learn" element={<Learn />} />
-        <Route path="#/certmaster-practice" element={<Practice />} />
-        <Route path="#/admin" element={<Admin />} />
-        <Route path="#/exams" element={<Exams />} />
-        <Route path="#/error" element={<Error />} />
+        <Route index element={<Home />} /> 
+        <Route path='/info' element={<Info />} /> 
+        <Route path="/coursera" element={<Coursera />} />
+        <Route path="/certmaster-learn" element={<Learn />} />
+        <Route path="/certmaster-practice" element={<Practice />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/exams" element={<Exams />} />
+        <Route path="/error" element={<Error />} />
       </Routes>
     </div>
-      
-
-    // </HashRouter>
-  )
+  );
 }
 
 export default App
