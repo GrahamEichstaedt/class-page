@@ -44,19 +44,19 @@ function App() {
 
   return (
     <div className={`App ${theme === "light" ? "light" : "dark"}`}>
-      <Nav /> 
+      <Nav />
       <Routes>
         <Route index element={<Home />} /> 
-        <Route path='/info' element={<Info />} /> 
+        <Route path="/info" element={<Info />} /> 
         <Route path="/coursera" element={<Coursera />} />
         <Route path="/certmaster-learn" element={<Learn />} />
         <Route path="/certmaster-practice" element={<Practice />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/exams" element={<Exams />} />
-        <Route path="/error" element={<Error />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
-  );
+);
 }
 
 export default App
