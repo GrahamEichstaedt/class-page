@@ -7,29 +7,6 @@ import './Home.css';
 
 export function Home() {
 
-    // anime({
-    //     targets: '.accent',
-    //     value: [0, 157],
-    //     round: 1,
-    //     easing: 'easeInOutExpo',
-    //     scale: 1.2
-    // });
-
-    // const [ isHidden, setIsHidden ] = useState(false);
-    // const [ previousSrollPosition, setPreviousScrollPosition ] = useState(0);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const currentScrollPosition = window.scrollY;
-    //         setIsHidden(previousSrollPosition < currentScrollPosition && currentScrollPosition > 150);
-    //         setPreviousScrollPosition(currentScrollPosition);
-    //     }
-
-    //     window.addEventListener('accent', handleScroll);
-
-    //     return () => window.removeEventListener('accent', handleScroll);
-    // }, [previousSrollPosition]);
-
     return (
         <Header>
             <div className="content">
